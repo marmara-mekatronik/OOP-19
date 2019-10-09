@@ -8,11 +8,22 @@ Yusuf Selimhan Çelik
 
 Cem GÜÇLÜ
 
-Rasim Altuntas
+Rasim Altuntaş
+Burhanettin YILMAZ
 
+Serkan ERAY
+
+Gökhan BAKIRCI
+
+Yusuf Selimhan ÇELİK 
+
+Cem GÜÇLÜ
+
+Rasim ALTUNTAŞ
 ÜNAL  ZURNALI
 
-Eyyüp Emre Tan
+Eyyüp Emre TAN
 
 
-Zübeyr Talha Çalışka
+Zübeyr Talha ÇALIŞKAN
+
