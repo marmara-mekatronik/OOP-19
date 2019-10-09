@@ -21,8 +21,8 @@ Geometrik anlamda, bir vektör 2 noktadan oluşur; başlangıç ve bitiş. Her b
  Görüldüğü üzere her bir nokta için ayrı ayrı kafa karıştırıcı şekilde tanımlamalar yapılmaktadır. Programcılar bunu kolaylaştırmak için **classları** yarattılar. Şimdi classların ne olduğunu öğrenelim ve aynı vektör tanımlamalarının class versiyonunu görelim.   
 ## **Classlar**
 
-Sınıflar kısaca kullanıcının tanımladığı veri tipi denebilir. Bu yapının içinde veriler ve fonksiyonlar birlikte bulunabilir. Sınıflar, nesnelerin modeli diğer bir deyişle şablonudur. Programda bir kez sınıf yazılıp şablon oluşturulduktan sonra o sınıftan gerektiği kadar nesne yaratılabilir. 
-
+Sınıflar kısaca kullanıcının tanımladığı veri tipi denebilir. Bu yapının içinde veriler ve fonksiyonlar birlikte bulunabilir. Sınıflar, nesnelerin modeli diğer bir deyişle şablonudur. Programda bir kez sınıf yazılıp şablon oluşturulduktan sonra o sınıftan gerektiği kadar nesne yaratılabilir.
+Aşağıdaki kodda  görüldüğü üzere iki adet class yaratılmıştır. İlk Point clasımızda **x** ve **y** noktaları yaratılmış **Vektor** clasımızda ise Pointe bağlı vektörün **start** ve **end** konumları yaratılmıştır. Bu bize şu kolaylığı sağlamaktadır; **Vektor vec1** diyerek **vec1** i yarattığımızda **vec1.start.x** tanımlaması ile kolay bir şekilde vektörümüzün ilk **x** koordinatını tanımlayarak ve aynı şekilde devam ederek vektörümüzün tanımı kolay bir şekilde yapıp yukarıdaki kod karışıklıklığından bizi kurtarmaktadır.
 #include **<iostream>**  
 **class** Point {  
 **public**:  
@@ -45,7 +45,7 @@ vec2.start.y = 2.0;
 vec2.end.x = 1.0;  
 vec2.end.y = 9.0;  
 }
- 
+Kodumuzdaki tanımlamalarımız aşağıdaki tablolarda örneklenmiştir.
 | vec1  |   |   |   |   |
 |---|---|---|---|---|
 |   start |   | | end  |
@@ -58,11 +58,12 @@ vec2.end.y = 9.0;
 
 
 
+
 **Classlara Erişim tipleri**
 
 Claslarımıza nereden erişilebileceğine dair iki seçeneğimiz var;
 
-**public**: her yerden erişilebilir.
+ **1. Public**: her yerden erişilebilir.
 
 #include **<iostream>**  
 **class** Point {  
