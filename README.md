@@ -1,4 +1,4 @@
 # OOP-19
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi
 
-Ulaş Eren ÇINAR 1995
+Ulaş Eren ÇINAR
