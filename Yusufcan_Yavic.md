@@ -25,6 +25,7 @@
 - Star
 - Bus
 - Ring
+
 Star ve Bus en çok kullanılanlarıdır.
 
 ### 1. Bus (Hat) Ağ Bağlantısı:
