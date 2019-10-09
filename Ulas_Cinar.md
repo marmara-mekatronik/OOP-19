@@ -4,7 +4,7 @@
 
 
 
-Geometrik anlamda, bir vektör 2 noktadan oluşur: başlangıç ve bitiş. Her bir noktanın kendisine ait x ve y değerleri vardır. Eğer başlangıç ve bitiş olmak üzere iki vektör tanımlarsak toplamda 4 değişkene ihtiyacımız olur. Aşağıda ki örnek kodda iki vektörün tanımı yapılmıştır.
+Geometrik anlamda, bir vektör 2 noktadan oluşur; başlangıç ve bitiş. Her bir noktanın kendisine ait x ve y değerleri vardır. Eğer başlangıç ve bitiş olmak üzere iki vektör tanımlarsak toplamda 4 değişkene ihtiyacımız olur. Aşağıda ki örnek kodda iki vektörün tanımı yapılmıştır.
 
 #include **"iostream"**  
 
