@@ -38,6 +38,8 @@ Ulaş Eren ÇINAR
 
 Berkant Keskin
 
+Yusuf Selimhan
+
 Rasim Altuntas
 
 ÜNAL  ZURNALI
@@ -48,4 +50,3 @@ Zübeyr Talha ÇALIŞKAN
 
 ```
 Destek: Cem GÜÇLÜ
-
