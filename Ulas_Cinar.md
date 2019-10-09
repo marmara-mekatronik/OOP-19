@@ -70,7 +70,7 @@ Claslarımıza nereden erişilebileceğine dair iki seçeneğimiz var;
 
  **1. Public**: her yerden erişilebilir.
 
-#include **<iostream>**  
+#include **"iostream"**  
 **class** Point {  
 **public**:  
 **double** x, y;  
@@ -83,7 +83,7 @@ Point p(2.0,3.0); _//class içinden fonksiyon ile değer atama_
 p.x = 5.0; _// class dışından direk değer atama_  
 }
 
-**private**: sadece class içinden erişilebilir.
+**2. Private**: sadece class içinden erişilebilir.
 
 #include **"iostream"**  
 **class** Point {  
@@ -91,14 +91,15 @@ p.x = 5.0; _// class dışından direk değer atama_
 **double** x, y;  
 **public**:  
 Point(**double** nx, **double** ny) {  
-x = nx; y = ny;  
+x = nx; y = ny;
+}
 };  
 **int** main() {  
-Point p(2.0,3.0);  
-p.x = 5.0;  _// değer atanmaz_  
+Point p(2.0,3.0);   _//x private olarak tanımlandığından classın içinden değer atanabilir._
+p.x = 5.0;  _// değer atanamaz çünkü x private olarak tanımlanmıştır._  
 }
 
-Classlarda public ya da private olarak belirtilmez ise default olarak private atanır.
+Classlarda public ya da private olarak belirtilmez ise default olarak private atanır. Aşağıdaki iki kod aynı işlevi görmektedir.
 
 **class** Point {  
 **double** x, y; 
@@ -109,7 +110,7 @@ Classlarda public ya da private olarak belirtilmez ise default olarak private at
  **double** x, y;
 };
 
-**Structs** : Structs c dilinden c++ diline taşınmıştır. C++ da classlar ile aynı kabul edilirkler. Tek farkı default olarak public kullanılmasıdır.
+**Structs** : Structs c dilinden c++ diline taşınmıştır. C++ da classlar ile aynı kabul edilirkler. Tek farkı default olarak public kullanılmasıdır. Aşağıdaki iki kod aynı işlevi görmektedir.
 
 **struct** Point { 
 **double** x, y; 
