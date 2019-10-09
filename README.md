@@ -34,6 +34,8 @@ Rasim ALTUNTAŞ
 
 Ulaş Eren ÇINAR
 
+Berkant Keskin
+
 Rasim Altuntas
 
 ÜNAL  ZURNALI
@@ -42,6 +44,6 @@ Eyyüp Emre Tan
 
 Zübeyr Talha ÇALIŞKAN
 
-Zübeyr Talha Çalışkan
 ```
 Destek: Cem GÜÇLÜ
+
