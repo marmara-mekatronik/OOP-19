@@ -2,7 +2,12 @@
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi
 
 
-ali osman kaya
+
+Ali Osman Kaya
+
+Yusuf Selimhan Çelik 
+
+Cem GÜÇLÜ
 
 Rasim Altuntas
 
@@ -10,3 +15,4 @@ Rasim Altuntas
 
 Eyyüp Emre Tan
 
+Zübeyr Talha Çalışkan
