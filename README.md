@@ -1,9 +1,11 @@
-﻿# OOP-19
+# OOP-19
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi
 
 Dilara  Gürçay 
  
 Seçilay KUTAL
+
+Yusufcan YAVİÇ
 
 Burhanettin YILMAZ
 
@@ -23,7 +25,5 @@ Rasim Altuntas
 
 Eyyüp Emre Tan
 
-Zübeyr Talha Çalışkan
-
-
+Zübeyr Talha ÇALIŞKAN
 
