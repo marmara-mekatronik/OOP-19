@@ -1,10 +1,10 @@
----
+
 
 # *Class -Sınıf*
 
 
 
-Geometrik anlamda, bir vektör 2 noktadan oluşur: başlangıç ve bitiş. Her bir noktanın kendisine ait x ve y değerleri vardır. Eğer başlangıç ve bitiş olmak üzere iki vektör tanımlarsak toplamda 4 değişkene ihtiyacımız olur. Aşağıda ki örnek kodda iki vektörün tanımı yapılmıştır.
+Geometrik anlamda, bir vektör 2 noktadan oluşur; başlangıç ve bitiş. Her bir noktanın kendisine ait x ve y değerleri vardır. Eğer başlangıç ve bitiş olmak üzere iki vektör tanımlarsak toplamda 4 değişkene ihtiyacımız olur. Aşağıda ki örnek kodda iki vektörün tanımı yapılmıştır.
 
 #include **"iostream"**  
 
@@ -49,7 +49,7 @@ vec2.end.y = 9.0;
 |---|---|---|---|---|
 |   start |   | | end  |
 | x=3  |  y=4 |   |  x=5 |y=6  |
----
+
 | vec2  |   |   |   |   |
 |---|---|---|---|---|
 |   start |   | | end  |
@@ -57,7 +57,6 @@ vec2.end.y = 9.0;
 
 
 
----
 **Classlara Erişim tipleri**
 
 Claslarımıza nereden erişilebileceğine dair iki seçeneğimiz var;
