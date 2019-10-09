@@ -1,20 +1,26 @@
 
 
- OOP-19
+Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi Sınıf Listesi:
 
-# OOP-19
+Ali Osman Kaya
 
-Nesne Yönelimli  Programlama Ders Çalışmaları - 2019 Güz Dönemi
+Semih GÜLÜM
 
-Said Bilal Aykan & Yunus Usta // isim soyisim örneği 
+Sefa DOĞAN.
 
+Dilara  Gürçay 
+ 
+Seçilay KUTAL
 
-﻿ OOP-19
+A.Çağatay KİNGİR
 
-﻿# OOP-19
+Rasim Altuntas
 
-Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi
+Yusufcan YAVİÇ
 
+Gökhan BAKIRC
+
+Rasim Altuntaş
 
 Burhanettin YILMAZ
 
@@ -24,17 +30,25 @@ Gökhan BAKIRCI
 
 Yusuf Selimhan ÇELİK 
 
-Cem GÜÇLÜ
+Ali Osman Kaya
 
 Rasim ALTUNTAŞ
 
+Ulaş Eren ÇINAR
+
+Berkant Keskin
+
+Yusuf Selimhan
+
+Rasim Altuntas
+
 ÜNAL  ZURNALI
 
-Eyyüp Emre TAN
+Eyyüp Emre Tan
 
 Zübeyr Talha ÇALIŞKAN
 
+Said Bilal Aykan
 
 
-
-
+Destek: Cem GÜÇLÜ
