@@ -1,11 +1,11 @@
 ﻿# OOP-19
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi
 
+Dilara  Gürçay 
  
 Seçilay KUTAL
 
-
-A.Çağatay KİNGİR 170217050
+A.Çağatay KİNGİR
 
 Rasim Altuntas
 
