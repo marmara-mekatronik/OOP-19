@@ -2,13 +2,14 @@
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi
 
 
-Ulaş Eren ÇINAR
 
 Gökhan BAKIRCI
 
 Yusuf Selimhan Çelik 
 
 Cem GÜÇLÜ
+
+Ulaş Eren ÇINAR
 
 Rasim Altuntas
 
