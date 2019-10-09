@@ -18,6 +18,10 @@ Rasim Altuntas
 
 Yusufcan YAVİÇ
 
+Gökhan BAKIRC
+
+Rasim Altuntaş
+
 Burhanettin YILMAZ
 
 Serkan ERAY
@@ -27,8 +31,6 @@ Gökhan BAKIRCI
 Yusuf Selimhan ÇELİK 
 
 Ali Osman Kaya
-
-Yusuf Selimhan Çelik 
 
 Rasim ALTUNTAŞ
 
