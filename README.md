@@ -4,18 +4,14 @@ Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi
 
 Burhanettin YILMAZ
 
-<<<<<<< HEAD
-=======
 Serkan ERAY
 
->>>>>>> ce2fdded35436e92b0e5bf10fe78edaa5ab15110
 Gökhan BAKIRCI
 
 Yusuf Selimhan ÇELİK 
 
 Cem GÜÇLÜ
 
-<<<<<<< HEAD
 Ulaş Eren ÇINAR
 
 Rasim Altuntas
@@ -25,7 +21,7 @@ Rasim Altuntas
 Eyyüp Emre Tan
 
 Zübeyr Talha Çalışkan
-=======
+
 Rasim ALTUNTAŞ
 
 ÜNAL  ZURNALI
@@ -33,6 +29,6 @@ Rasim ALTUNTAŞ
 Eyyüp Emre TAN
 
 Zübeyr Talha ÇALIŞKAN
->>>>>>> ce2fdded35436e92b0e5bf10fe78edaa5ab15110
+
 
 
