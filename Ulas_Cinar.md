@@ -102,7 +102,8 @@ Classlarda public ya da private olarak belirtilmez ise default olarak private at
 
 **class** Point {  
 **double** x, y; 
-}; 
+};
+
 **class** Point { 
  **private**: 
  **double** x, y;
@@ -113,6 +114,7 @@ Classlarda public ya da private olarak belirtilmez ise default olarak private at
 **struct** Point { 
 **double** x, y; 
 };
+
 **struct** Point {  
 **public**:
  **double** x, y;
