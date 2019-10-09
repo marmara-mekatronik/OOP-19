@@ -17,10 +17,13 @@ Yusuf Selimhan ÇELİK
 
 Cem GÜÇLÜ
 
-Rasim ALTUNTAŞ
+Ulaş Eren ÇINAR
+
+Rasim Altuntas
 
 ÜNAL  ZURNALI
 
 Eyyüp Emre Tan
 
 Zübeyr Talha ÇALIŞKAN
+
