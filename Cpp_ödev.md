@@ -28,7 +28,7 @@ printVector(xStart, xEnd, yStart, yEnd);
 _// (2.2,1.9) -> (3.8,4.3)_  
 }
 
-##**Classlar**
+## **Classlar**
 
 Sınıflar kısaca kullanıcının tanımladığı veri tipi denebilir. Bu yapının içinde veriler ve fonksiyonlar birlikte bulunabilir. Sınıflar, nesnelerin modeli diğer bir deyişle şablonudur. Programda bir kez sınıf yazılıp şablon oluşturulduktan sonra o sınıftan gerektiği kadar nesne yaratılabilir.
 
