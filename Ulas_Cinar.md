@@ -112,15 +112,11 @@ Classlarda public ya da private olarak belirtilmez ise default olarak private at
 **Structs** : Structs c dilinden c++ diline taşınmıştır. C++ da classlar ile aynı kabul edilirkler. Tek farkı default olarak public kullanılmasıdır.
 
 **struct** Point { 
-
 **double** x, y; 
-
 };
 
 **struct** Point {  
 **public**:
-
  **double** x, y;
- 
 };
 ```
