@@ -25,4 +25,3 @@ Eyyüp Emre Tan
 
 Zübeyr Talha ÇALIŞKAN
 
-
