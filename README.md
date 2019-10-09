@@ -22,13 +22,9 @@ Eyyüp Emre Tan
 
 Zübeyr Talha Çalışkan
 
-Rasim ALTUNTAŞ
 
-ÜNAL  ZURNALI
 
-Eyyüp Emre TAN
 
-Zübeyr Talha ÇALIŞKAN
 
 
 
