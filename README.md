@@ -2,6 +2,7 @@
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi
 
 
+Burhanettin YILMAZ
 
 Serkan ERAY
 
@@ -18,3 +19,4 @@ Rasim ALTUNTAŞ
 Eyyüp Emre TAN
 
 Zübeyr Talha ÇALIŞKAN
+
