@@ -10,6 +10,10 @@ Gökhan BAKIRCI
 
 Yusuf Selimhan ÇELİK 
 
+Ali Osman Kaya
+
+Yusuf Selimhan Çelik 
+
 Cem GÜÇLÜ
 
 Rasim Altuntas
@@ -21,3 +25,4 @@ Eyyüp Emre TAN
 
 Zübeyr Talha ÇALIŞKAN
 
+Zübeyr Talha Çalışkan
