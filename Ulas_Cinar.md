@@ -25,7 +25,8 @@ Görüldüğü üzere her bir nokta için ayrı ayrı kafa karıştırıcı şek
 
 Sınıflar kısaca kullanıcının tanımladığı veri tipi denebilir. Bu yapının içinde veriler ve fonksiyonlar birlikte bulunabilir. Sınıflar, nesnelerin modeli diğer bir deyişle şablonudur. Programda bir kez sınıf yazılıp şablon oluşturulduktan sonra o sınıftan gerektiği kadar nesne yaratılabilir.
 Aşağıdaki kodda  görüldüğü üzere iki adet class yaratılmıştır. İlk Point clasımızda **x** ve **y** noktaları yaratılmış **Vektor** clasımızda ise Pointe bağlı vektörün **start** ve **end** konumları yaratılmıştır. Bu bize şu kolaylığı sağlamaktadır; **Vektor vec1** diyerek **vec1** i yarattığımızda **vec1.start.x** tanımlaması ile kolay bir şekilde vektörümüzün ilk **x** koordinatını tanımlayarak ve aynı şekilde devam ederek vektörümüzün tanımı kolay bir şekilde yapıp yukarıdaki kod karışıklıklığından bizi kurtarmaktadır.
-#include **<iostream>**  
+
+#include **"iostream"**  
 **class** Point {  
 **public**:  
 **double** x, y;  
@@ -84,14 +85,13 @@ p.x = 5.0; _// class dışından direk değer atama_
 
 **private**: sadece class içinden erişilebilir.
 
-#include **<iostream>**  
+#include **"iostream"**  
 **class** Point {  
 **private**:  
 **double** x, y;  
 **public**:  
 Point(**double** nx, **double** ny) {  
 x = nx; y = ny;  
-}  
 };  
 **int** main() {  
 Point p(2.0,3.0);  
@@ -112,11 +112,15 @@ Classlarda public ya da private olarak belirtilmez ise default olarak private at
 **Structs** : Structs c dilinden c++ diline taşınmıştır. C++ da classlar ile aynı kabul edilirkler. Tek farkı default olarak public kullanılmasıdır.
 
 **struct** Point { 
+
 **double** x, y; 
+
 };
 
 **struct** Point {  
 **public**:
+
  **double** x, y;
+ 
 };
 ```
