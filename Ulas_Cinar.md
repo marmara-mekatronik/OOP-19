@@ -119,4 +119,5 @@ Classlarda public ya da private olarak belirtilmez ise default olarak private at
 **public**:
  **double** x, y;
 };
+
 ```
