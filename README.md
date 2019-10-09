@@ -5,13 +5,7 @@ Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi
 
 
 
-
-
-
-
-
-
-
+Gökhan BAKIRCI
 
 Yusuf Selimhan Çelik 
 
@@ -26,3 +20,4 @@ Eyyüp Emre Tan
 
 
 Zübeyr Talha Çalışkan
+
