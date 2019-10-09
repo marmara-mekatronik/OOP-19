@@ -1,12 +1,16 @@
 ﻿# OOP-19
-Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi
+Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi Sınıf Listesi:
 
 
 Semih GÜLÜM
 
+Sefa DOĞAN.
+
 Dilara  Gürçay 
  
 Seçilay KUTAL
+
+Yusufcan YAVİÇ
 
 Burhanettin YILMAZ
 
@@ -18,7 +22,9 @@ Yusuf Selimhan ÇELİK
 
 Cem GÜÇLÜ
 
-Rasim ALTUNTAŞ
+Ulaş Eren ÇINAR
+
+Rasim Altuntas
 
 ÜNAL  ZURNALI
 
