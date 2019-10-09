@@ -1,6 +1,8 @@
 ﻿# OOP-19
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi
-al iosman kaya
+ali osman kaya
+
+Burhanettin YILMAZ
 
 Serkan ERAY
 
@@ -18,3 +20,4 @@ Rasim ALTUNTAŞ
 Eyyüp Emre TAN
 
 Zübeyr Talha ÇALIŞKAN
+
