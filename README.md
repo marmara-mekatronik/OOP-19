@@ -5,6 +5,8 @@ Dilara  Gürçay
  
 Seçilay KUTAL
 
+Yusufcan YAVİÇ
+
 Burhanettin YILMAZ
 
 Serkan ERAY
