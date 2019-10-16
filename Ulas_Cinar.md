@@ -5,7 +5,7 @@
 ***
 
 Geometri bağlamında, bir vektör 2 noktadan oluşur: başlangıç ve bitiş. Her bir noktanın kendisine ait x ve y değerleri vardır. Eğer başlangıç ve bitiş olmak üzere iki vektör tanımlarsak toplamda 4 değişkene ihtiyacımız olur.
-
+```C
 #include **<iostream>**  
 **void** offsetVector(**double** &x0, **double** &x1, **double** &y0, **double** &y1,  
 **double** offsetX, **double** offsetY) {  
@@ -27,7 +27,7 @@ offsetVector(xStart, xEnd, yStart, yEnd, 1.0, 1.5);
 printVector(xStart, xEnd, yStart, yEnd);  
 _// (2.2,1.9) -> (3.8,4.3)_  
 }
-
+```
 ## **Classlar**
 
 Sınıflar kısaca kullanıcının tanımladığı veri tipi denebilir. Bu yapının içinde veriler ve fonksiyonlar birlikte bulunabilir. Sınıflar, nesnelerin modeli diğer bir deyişle şablonudur. Programda bir kez sınıf yazılıp şablon oluşturulduktan sonra o sınıftan gerektiği kadar nesne yaratılabilir.
