@@ -1,4 +1,4 @@
-﻿# OOP-19
+# OOP-19
 
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi Sınıf Listesi:
 
@@ -40,6 +40,8 @@ Ulaş Eren ÇINAR
 
 Berkant Keskin
 
+Yusuf Selimhan
+
 Rasim Altuntas
 
 ÜNAL  ZURNALI
@@ -48,6 +50,6 @@ Eyyüp Emre Tan
 
 Zübeyr Talha ÇALIŞKAN
 
-```
-Destek: Cem GÜÇLÜ
+Said Bilal Aykan
 
+Destek: Cem GÜÇLÜ
