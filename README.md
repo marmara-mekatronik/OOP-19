@@ -6,7 +6,7 @@ Ali Osman KAYA
 
 Semih GÜLÜM
 
-Sefa DOĞAN.
+Sefa DOĞAN
 
 Dilara  GÜRÇAY
  
