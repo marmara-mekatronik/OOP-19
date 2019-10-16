@@ -71,55 +71,55 @@ Claslarımıza nereden erişilebileceğine dair iki seçeneğimiz var;
 ```cpp
 #include "iostream"  
 class Nokta {  
-public:  
-double x, y;  
-Nokta(double nx, double ny) {  
-x = nx;
-y = ny;  
+ public:  
+  double x, y;  
+  Nokta(double nx, double ny) {  
+   x = nx;
+   y = ny;  
 }  
 };  
 int main() {  
-Nokta n(2.0,3.0); _//class içinden fonksiyon ile değer atama_  
-n.x = 5.0; _// class dışından direk değer atama_  
+ Nokta n(2.0,3.0); _//class içinden fonksiyon ile değer atama_  
+ n.x = 5.0; _// class dışından direk değer atama_  
 }
 ```
 **2. Private**: sadece class içinden erişilebilir.
 ```cpp
 #include "iostream" 
-class Nokta {  
-private:  
-double x, y;  
-public:  
-Nokta(double nx, double ny) {  
-x = nx;
-y = ny;
+ class Nokta {  
+  private:  
+   double x, y;  
+  public:  
+   Nokta(double nx, double ny) {  
+    x = nx;
+    y = ny;
 }
 };  
 int main() {  
-Nokta n(2.0,3.0);   _//x private olarak tanımlandığından classın içinden değer atanabilir._
-n.x = 5.0;  _// değer atanamaz çünkü x private olarak tanımlanmıştır._  
+ Nokta n(2.0,3.0);   //x private olarak tanımlandığından classın içinden değer atanabilir._
+ n.x = 5.0;  // değer atanamaz çünkü x private olarak tanımlanmıştır._  
 }
 ```
 Classlarda public ya da private olarak belirtilmez ise default olarak private atanır. Aşağıdaki iki kod aynı işlevi görmektedir.
 ```cpp
 class Nokta {  
-double x, y; 
+ double x, y; 
 };
 
 class Nokta { 
  private: 
- double x, y;
+  double x, y;
 };
 ```
 **Structs** : Structs c dilinden c++ diline taşınmıştır. C++ da classlar ile aynı kabul edilirkler. Tek farkı default olarak public kullanılmasıdır. Aşağıdaki iki kod aynı işlevi görmektedir.
 ```cpp
 struct Nokta { 
-double x, y; 
+ double x, y; 
 };
 
 struct Nokta {  
-public:
-double x, y;
+ public:
+  double x, y;
 };
 ```
 ```
