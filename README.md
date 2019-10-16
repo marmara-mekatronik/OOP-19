@@ -22,5 +22,6 @@ Rasim ALTUNTAŞ
 Eyyüp Emre Tan
 
 Zübeyr Talha ÇALIŞKAN
+ROJİN Arıkan
 
 
