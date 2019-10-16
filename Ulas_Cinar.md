@@ -9,14 +9,14 @@ Sınıflar konusuna geçmeden önce sınıfların farkını anlamak üzere vekt�
 #include "iostream" 
 
 int main() {  
-double x1Bas = 1.2;  
-double x1Son = 2.0;  
-double y1Bas = 0.4;  
-double y1Son = 1.6;   
-double x2Bas = 1.8;  
-double x2Son = 3.0;  
-double y2Bas = 0.9;  
-double y2Son = 1.1;   
+ double x1Bas = 1.2;  
+ double x1Son = 2.0;  
+ double y1Bas = 0.4;  
+ double y1Son = 1.6;   
+ double x2Bas = 1.8;  
+ double x2Son = 3.0;  
+ double y2Bas = 0.9;  
+ double y2Son = 1.1;   
 }
 ```
 Görüldüğü üzere her bir nokta için ayrı ayrı kafa karıştırıcı şekilde tanımlamalar yapılmaktadır. Programcılar bunu kolaylaştırmak için **classları** yarattılar. Şimdi classların ne olduğunu öğrenelim ve aynı vektör tanımlamalarının class versiyonunu görelim.   
@@ -36,16 +36,16 @@ public:
 Nokta baslangic, son;  
 };  
 int main() {  
-Vektor vek1;  
-vek1.baslangic.x = 3.0;  
-vek1.baslangic.y = 4.0;  
-vek1.son.x = 5.0;  
-vek1.son.y = 6.0;  
-Vektor vek2;   
-vek2.baslangic.x = 7.0;
-vek2.baslangic.y = 2.0;  
-vek2.son.x = 1.0;  
-vek2.son.y = 9.0;  
+ Vektor vek1;  
+ vek1.baslangic.x = 3.0;  
+ vek1.baslangic.y = 4.0;  
+ vek1.son.x = 5.0;  
+ vek1.son.y = 6.0;  
+ Vektor vek2;   
+ vek2.baslangic.x = 7.0;
+ vek2.baslangic.y = 2.0;  
+ vek2.son.x = 1.0;  
+ vek2.son.y = 9.0;  
 }
 ```
 Kodumuzdaki tanımlamalarımız aşağıdaki tablolarda örneklenmiştir.
