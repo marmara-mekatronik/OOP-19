@@ -50,4 +50,7 @@ Zübeyr Talha ÇALIŞKAN
 
 Said Bilal Aykan
 
+Hüseyin Özen
+
 Destek: Cem GÜÇLÜ
+
