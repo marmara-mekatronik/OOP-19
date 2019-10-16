@@ -5,12 +5,12 @@ C++ bir çoklu paradigmalı programlama dilidir. Bunun anlamı, farklı programl
 C++’da bir nesne oluşturmadan önce bir “class” (sınıf) tanımlamak gerekir. Sınıf, aynı karakteristik özelliklere sahip nesneler grubudur. Aşağıda “Student” isimli sınıf içerisinde herhangi bir öğrenci “nesne”sinin iki özelliği tanımlanmıştır.
 ```cpp
 include "iostream"
-**using namespace** std;  // Bu fonksiyon aynı isme sahip birden           
-                                        //fazla değişken tanımlayabilmek için         kullanılır.
+using namespace std;                     // Bu fonksiyon aynı isme sahip birden           
+                                        //fazla değişken tanımlayabilmek için kullanılır.
           class  Student { 
           public: 
           int ogrencino;    // İnt veri tipinde tanımlanan öğrenci numarası
-           string isim;  //  String veri tipinde tanımlanan öğrenci ismi
+           string isim;    //  String veri tipinde tanımlanan öğrenci ismi
             }; 
             int main() 
           { 
