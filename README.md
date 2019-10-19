@@ -47,7 +47,6 @@ Rasim Altuntas
 Eyyüp Emre Tan
 
 Zübeyr Talha ÇALIŞKAN
-ROJİN Arıkan
 
 Said Bilal Aykan
 
