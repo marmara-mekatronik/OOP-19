@@ -2,6 +2,8 @@
 
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi Sınıf Listesi:
 
+Rojin Arıkan
+
 Ali Osman Kaya
 
 Semih GÜLÜM
@@ -47,7 +49,6 @@ Rasim Altuntas
 Eyyüp Emre Tan
 
 Zübeyr Talha ÇALIŞKAN
-ROJİN Arıkan
 
 Said Bilal Aykan
 
