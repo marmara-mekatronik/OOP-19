@@ -22,7 +22,7 @@ using namespace std;                     // Bu fonksiyon aynı isme sahip birden
    return 0;  
 }
 ```
-Yukarıdaki örnekte tanımlanan “Student” isimli sınıf için “s1” isimli bir nesne tanımlanmıştır. Bu nesnenin iki özelliği daha sonradan ekrana yazılmıştır. Ekran çıktısı aşağıdaki gibi olacaktır:
+Yukarıdaki örnekte tanımlanan “Student” isimli sınıf için “s1” isimli bir nesne tanımlanmıştır.Bu nesnenin iki özelliği daha sonradan ekrana yazılmıştır. Ekran çıktısı aşağıdaki gibi olacaktır:
 
 **Ogrencinin ismi: Cillian**
 
