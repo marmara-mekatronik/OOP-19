@@ -1,4 +1,4 @@
-Live Demo
+
 #include <iostream>
 
 using namespace std;
@@ -10,7 +10,7 @@ int main () {
 
    // let us have array address in pointer.
    ptr = var;
-   
+
    for (int i = 0; i < MAX; i++) {
       cout << "Address of var[" << i << "] = ";
       cout << ptr << endl;
@@ -21,6 +21,6 @@ int main () {
       // point to the next location
       ptr++;
    }
-   
+
    return 0;
 }
