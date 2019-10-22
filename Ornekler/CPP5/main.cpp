@@ -1,4 +1,4 @@
-Live Demo
+
 #include <iostream>
 
 using namespace std;
