@@ -28,12 +28,12 @@ Aşağıdaki kodda  görüldüğü üzere iki adet class yaratılmıştır. İlk
 ```cpp
 #include "iostream"  
 class Nokta {  
-public:  
-double x, y;  
+ public:  
+  double x, y;  
 };  
 class Vektor {  
-public:  
-Nokta baslangic, son;  
+ public:  
+  Nokta baslangic, son;  
 };  
 int main() {  
  Vektor vek1;  
