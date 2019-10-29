@@ -5,6 +5,9 @@ public:
     double derinlik;
     double genislik;
     double yukseklik;
+	void ozellikleri_yazdir() {
+        cout <<"Derinlik = "<<derinlik<<" Genislik = "<<genislik<<" Yukseklik = "<<yukseklik<<endl;
+    }
 };
 
 using namespace std;
@@ -21,7 +24,8 @@ int main() {
     Kutu2.genislik = 2;
     Kutu2.yukseklik = 2.5;
 
-    cout << "1. Kutunuzun D:" << Kutu1.derinlik << " G:" << Kutu1.genislik << " Y:" << Kutu1.yukseklik;
+	Kutu1.ozellikleri_yazdir;
+	Kutu2.ozellikleri_yazdir;
 
     return 0;
 }
