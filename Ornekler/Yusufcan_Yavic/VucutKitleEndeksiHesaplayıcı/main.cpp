@@ -71,7 +71,7 @@ void Kullanici::diyet(){
                     std::cout << "Sagliklisiniz Beslenme Duzeninizi Bozmayin" << std::endl;
                     break;
                 case 3:
-                    std::cout << "Doktorumuzdan Kilo Verme Progami Aliniz" << std::endl;
+                    std::cout << "Doktorumuzdan Kilo Verme Programi Aliniz" << std::endl;
                     break;
                 default:
                     break;
