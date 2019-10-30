@@ -2,15 +2,13 @@
 #include <string>
 #include <fstream>
 
-
 short int secenek;
 int kayit_sayisi = 0;
 using namespace std;
-int dosya_yazdirma(string kullanici_adi,string sifre,string sifre_tekrar,string eposta,string isim,string soyisim);//dosya_yazdirma fonksiyonunu prototipi tanımlandı
+int dosya_yazdirma(string kullanici_adi,string sifre,string sifre_tekrar,string eposta,string isim,string soyisim );//dosya_yazdirma fonksiyonunu prototipi tanımlandı
 int kullanici_sifre_kontrol(string sifre,string sifre_1);//kullanıcıdan gelen şifrelerin aynı oldugunu kontrol eden kullanici_sifre_kontrol fonksiyonu tanımlandı
 int admin_control(string kullanici_adi,string kullanici_sifre);
-void dosya_okuma(string kullanici_ismi);
-void kullanici_bilgileri_guncelleme(string kullanici_adi,string sifre,string sifre_tekrar,string eposta,string isim,string soyisim,int satir_sayisi);
+int dosya_okuma(string kullanici_ismi);
 
 
 //Kayıt Bilgilerini İçeren Class oluşturulup heryerden erişim saglanmasını için public in icine istenen bilgiler degişken olarak tanımladın
@@ -129,7 +127,6 @@ int main(){
 int kullanici_sifre_kontrol(string sifre,string sifre_1){
     if (sifre == sifre_1)//şifre ve şifre tekrar karşılaştırması
         return 1;
-
     else
         return 0;
 }
@@ -139,7 +136,7 @@ int kullanici_sifre_kontrol(string sifre,string sifre_1){
 int dosya_yazdirma(string kullanici_adi,string sifre,string sifre_tekrar,string eposta,string isim,string soyisim){
     ofstream kayit;
     kayit.open("new.txt",ios::app);//new.txt dosyasının içine gidip en son satıra veri yazılmasını sağlar ios::app komutu veri ekleme komutudur.
-    kayit << kullanici_adi << "      "<< sifre << "       "<< sifre_tekrar << "      "<< eposta << "      "<< isim <<"      "<< soyisim << "       "<< endl;
+    kayit << kullanici_adi << "      "<< sifre << "       "<< sifre_tekrar << "      "<< eposta << "      "<< isim <<"      "<< soyisim << "       "<<  endl;
     kayit_sayisi++;
     secenek = 0;
     kayit.close();
@@ -158,74 +155,28 @@ int admin_control(string kullanici_adi,string kullanici_sifre){
 
 }
 
-void dosya_okuma(string kullanici_ismi){
-    string ID;
-    string sifre;
-    string sifre_tekar;
-    string isim;
-    string soyisim;
-    string eposta;
-    string yeni_eposta;
-    string yeni_sifre;
-    int satir_sayisi = 0;
-    int gidilecek_satir;
-    int secenek;
+int dosya_okuma(string kullanici_ismi){
+    string name;
+    string name_2;
+    int no;
     ifstream dosya_oku;
-    dosya_oku.open("new.txt",ios::in);
+    dosya_oku.open("new.txt");
 
     while(1){
-        dosya_oku >> ID ;
-        if (kullanici_ismi == ID){
-            dosya_oku >> sifre;
-            dosya_oku >> sifre_tekar;
-            dosya_oku >> isim;
-            dosya_oku >> soyisim;
-            dosya_oku >> eposta;
+        dosya_oku >> name ;
+        getline(dosya_oku,name_2);
+        if (kullanici_ismi == name){
+            cout << name;
+            cout << name_2 << endl;
+            cout << "Kullanici_Bilgileri" << endl;
             cout << "Kullanici_Bulundu"<<endl;
-            cout << "|-----------------------------|" << endl;
-            cout << "|sifre degiştirmek için 1     |" << endl;
-            cout << "|eposta degiştirmek için 2    |" << endl;
-            cout << "|çıkmak için 0                |" << endl;
-            cout << "|-----------------------------|" << endl;
-            cout << "Giriniz:";
-            cin >> secenek;
-            cout << endl;
-            if (secenek == 1){
-                cout << "Yeni Sifreyi giriniz:";
-                cin >> yeni_sifre;
-                dosya_yazdirma(ID,yeni_sifre,yeni_sifre,isim,soyisim,eposta);
-                break;
-
-            }
-
-            else if (secenek == 2){
-                cout << "Yeni Epostayı Giriniz:";
-                cin >> yeni_eposta;
-                dosya_yazdirma(ID,sifre,sifre_tekar,isim,soyisim,yeni_eposta);
-                cout << "Dosya_Başarılı";
-                break;
-            }
-
-            else if (secenek == 0){
-                cout << "Çıkılıyor";
-                break;
-            }
-
+            break;
         }
         else if(dosya_oku.eof() == 1){
             cout << "Kulanici Bulunamadı"<<endl;
             break;
 
         }
-        satir_sayisi++;
     }
 
 }
-
-
-
-
-
-
-
-
