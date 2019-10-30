@@ -2,7 +2,16 @@
 
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi Sınıf Listesi:
 
+<<<<<<< HEAD
 Ali Osman KAYA
+=======
+
+Buket Aydoğan
+
+Rojin Arıkan
+
+Ali Osman Kaya
+>>>>>>> 479d80f79a9598405ca7e2f6e543449bc7cd0aea
 
 Semih GÜLÜM
 
