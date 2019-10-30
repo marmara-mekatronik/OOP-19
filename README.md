@@ -2,7 +2,10 @@
 
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi Sınıf Listesi:
 
+
 Buket Aydoğan
+
+Rojin Arıkan
 
 Ali Osman Kaya
 
