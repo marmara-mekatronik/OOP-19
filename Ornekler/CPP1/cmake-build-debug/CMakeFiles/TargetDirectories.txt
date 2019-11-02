@@ -1,3 +1,0 @@
-/Users/hyuce/ClionProjects/OOP-19/Ornekler/CPP1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/hyuce/ClionProjects/OOP-19/Ornekler/CPP1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/hyuce/ClionProjects/OOP-19/Ornekler/CPP1/cmake-build-debug/CMakeFiles/CPP1.dir
