@@ -1,4 +1,4 @@
-# OOP-19
+
 
 Nesne Yönelimli Programlama Ders Çalışmaları - 2019 Güz Dönemi Sınıf Listesi:
 
@@ -42,4 +42,5 @@ Zübeyr Talha ÇALIŞKAN
 
 Said Bilal AYKAN
 
+````
 Destek: Cem GÜÇLÜ
