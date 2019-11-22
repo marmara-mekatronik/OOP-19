@@ -60,7 +60,7 @@ public:
 
 private:
     float amper;
-    float sebeke_gerilimi;
+    float gerilim;
 };
 //guc_hesabi classının yapıcı fonksiyonu oluşturuldu...
 guc_hesabi::guc_hesabi() {
@@ -158,7 +158,7 @@ void guc_hesabi::guc_hesaplama() {
     /*Elektriksel güç P=V*I formülü kullanılarak bulunur.(Volt*Amper = Watt)
      * elektik tüketiminin satışının hesaplanması için kw hesaplaması gerekir.
      * (Volt*Amper)/1000 kullanılarak W-->kW a dönüştürmüş olduk.*/
-    float saatlik_guc = (sebeke_gerilimi*amper)/1000;
+    float saatlik_guc = (gerilim*amper)/1000;
     /*Hesapladıgımız güç degeri 1 saatte tüketilen güç.Sistemin çalışmasını saniye üzerinden hesapladıgımız için
      * saatlik_güc/3600 yaparak 1 saniyede kullandıgımız güç degerini kW cinsinden buluruz*/
     saniyede_harcanan_guc = saatlik_guc/3600;
@@ -170,7 +170,7 @@ void guc_hesabi::kullanim_bilgileri() {
     cout << "Sisteminizin kullandigi Amper Miktari::";
     cin >> amper;
     cout << endl<<"Sisteminizin kullandigi gerilim::";
-    cin >> sebeke_gerilimi;
+    cin >> gerilim;
     cout << "*********************************************************"<<endl;
 }
 
