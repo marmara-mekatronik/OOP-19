@@ -23,8 +23,8 @@ void B::GosterA(A &x) {
     std::cout<< "A::a=" << x.a;
 }
 int main() {
-    A a;
-    B b;
-    b.GosterA(a);
+    A a1;
+    B b1;
+    b1.GosterA(a1);
     return 0;
 }

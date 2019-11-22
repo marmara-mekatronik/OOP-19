@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Casper/Desktop/OOP-19/Ornekler/Huseyin_YUCE/11_Inline/main.cpp
+iostream
+-
+ctime
+-
+chrono
+-
+
