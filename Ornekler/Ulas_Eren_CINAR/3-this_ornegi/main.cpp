@@ -5,9 +5,9 @@ public:
     int no;
     std::string isim;
     float maas;
-    calisanlar(int id, std::string isim, float maas)
+    calisanlar(int no, std::string isim, float maas)
     {
-        this->no = id;
+        this->no = no;
         this->isim = isim;
         this->maas = maas;
     }
