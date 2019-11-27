@@ -1,0 +1,39 @@
+"C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Unal\Desktop\OOP-19\Ornekler\Ünal_ZURNALI\fonksiyon_calisma_hızı_ciftmi_tekmi(chrono)
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is GNU 8.1.0
+-- Check for working C compiler: C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe
+-- Check for working C compiler: C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe -- broken
+CMake Error at C:/Program Files/JetBrains/CLion 2019.2.3/bin/cmake/win/share/cmake-3.15/Modules/CMakeTestCCompiler.cmake:60 (message):
+  The C compiler
+
+    "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: C:/Users/Unal/Desktop/OOP-19/Ornekler/Ãœnal_ZURNALI/fonksiyon_calisma_hÄ±zÄ±_ciftmi_tekmi(chrono)/cmake-build-debug/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe cmTC_a46ec/fast && C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_a46ec.dir\build.make CMakeFiles/cmTC_a46ec.dir/build
+    mingw32-make.exe[1]: Entering directory 'C:/Users/Unal/Desktop/OOP-19/Ornekler/â–„nal_ZURNALI/fonksiyon_calisma_hÂ²zÂ²_ciftmi_tekmi(chrono)/cmake-build-debug/CMakeFiles/CMakeTmp'
+    Building C object CMakeFiles/cmTC_a46ec.dir/testCCompiler.c.obj
+    C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe    -o CMakeFiles\cmTC_a46ec.dir\testCCompiler.c.obj   -c C:\Users\Unal\Desktop\OOP-19\Ornekler\â”œÂ£nal_ZURNALI\fonksiyon_calisma_hâ”€â–’zâ”€â–’_ciftmi_tekmi(chrono)\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+    gcc.exe: error: C:\Users\Unal\Desktop\OOP-19\Ornekler\â”œÂ£nal_ZURNALI\fonksiyon_calisma_hâ”€â–’zâ”€â–’_ciftmi_tekmi(chrono)\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+    gcc.exe: fatal error: no input files
+    compilation terminated.
+    mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a46ec.dir\build.make:65: CMakeFiles/cmTC_a46ec.dir/testCCompiler.c.obj] Error 1
+    mingw32-make.exe[1]: Leaving directory 'C:/Users/Unal/Desktop/OOP-19/Ornekler/â–„nal_ZURNALI/fonksiyon_calisma_hÂ²zÂ²_ciftmi_tekmi(chrono)/cmake-build-debug/CMakeFiles/CMakeTmp'
+    mingw32-make.exe: *** [Makefile:120: cmTC_a46ec/fast] Error 2
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Unal/Desktop/OOP-19/Ornekler/Ãœnal_ZURNALI/fonksiyon_calisma_hÄ±zÄ±_ciftmi_tekmi(chrono)/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/Unal/Desktop/OOP-19/Ornekler/Ãœnal_ZURNALI/fonksiyon_calisma_hÄ±zÄ±_ciftmi_tekmi(chrono)/cmake-build-debug/CMakeFiles/CMakeError.log".
