@@ -1,0 +1,3 @@
+C:/Users/Casper/static_ornegi/cmake-build-debug/CMakeFiles/static_ornegi.dir
+C:/Users/Casper/static_ornegi/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Casper/static_ornegi/cmake-build-debug/CMakeFiles/rebuild_cache.dir
