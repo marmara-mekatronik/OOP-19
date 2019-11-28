@@ -46,3 +46,5 @@ Hüseyin Özen
 
 Destek: Cem GÜÇLÜ
 
+Abdullah Sala
+
