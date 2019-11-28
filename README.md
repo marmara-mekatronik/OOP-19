@@ -46,3 +46,7 @@ Hüseyin Özen
 
 Destek: Cem GÜÇLÜ
 
+--------------------------------------------
+
+İbrahim VAROLA
+
