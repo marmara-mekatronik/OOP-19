@@ -22,8 +22,8 @@ int main() {
     std::chrono::time_point<std::chrono::system_clock> d_basla, d_son;
     d_basla = std::chrono::system_clock::now();
 
-    for (int a = 0; a < 9000; ++a) {
-        for (int b = 0; b < 9000; ++b) {
+    for (int a = 0; a < 9000; a++) {
+        for (int b = 0; b < 9000; b++) {
             // fonk(a,b);
              fonk_inline(a,b);
             // HESAPLA(a, b);

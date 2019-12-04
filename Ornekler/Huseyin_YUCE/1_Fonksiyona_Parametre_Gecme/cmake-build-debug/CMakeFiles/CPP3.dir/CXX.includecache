@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Casper/Desktop/OOP-19/Ornekler/Huseyin_YUCE/1_Fonksiyona_Parametre_Gecme/main.cpp
+iostream
+-
+
