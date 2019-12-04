@@ -1,21 +1,43 @@
 #include <iostream>
 #include <chrono>
 #include <ctime>
+#include <sqlite3.h>
+#include <string>
 
+/*sqlite3.h kütüphanesinin indirlesi ve cmake dosyasına göre kurulması gerekmektedir...
+ * Kütüphane linki :https://www.sqlite.org/download.html
+ * Sources Code kısmından sqlite-amalgamation-3300100.zip kısmını indirip klasorun dizinine kurulması gerekmektedir...*/
 
 using namespace std;
+string baslangic_global;
+string bitis_global;
+float amper_1;
+float gerilim;
+float kullanim_sresi_1;
+float kullanim_miktari;
+
+
 //birim fiyatların alındığı site : https://www.enerjiportali.com/elektrik-fiyatlari-8/
+class veritabani {
+public:
+    int open();
+    void create_table();
+    void kullanim_bilgilerini_kaydetme();
+};
 
 //guc_hesabi adında bir class oluşturuldu ve alt classlar tanımlandı.
 class guc_hesabi{
 public:
     ~guc_hesabi();
     guc_hesabi();
-    float kullanim_sresi;
+    float kullanim_sresi{};
     void guc_hesaplama();
-    float saniyede_harcanan_guc;
-    float toplam_harcanan_guc;
+    float saniyede_harcanan_guc{};
+    float toplam_harcanan_guc{};
     void kullanim_bilgileri();
+    string bitis_zamani;
+    string baslangic_zamani;
+    float kullanim_tutari{};
     /*sanayi alt classının içerisine private kısmına sanayi_birim_tutar tanımladı ve bu private kısmına erişebilrmesi için
     sanayi_ucret_hesaplama fonksiyonu tanımlandı ve girdi olarak sistemin harcadıgını güç degeri gönderildi*/
     class sanayi{
@@ -57,15 +79,88 @@ public:
         float tarimsal_sulama_birim_tutar = 48.7283;
 
     };
-
+    float amper{};
+    float sebeke_gerilimi{};
 private:
-    float amper;
-    float sebeke_gerilimi;
 };
+int veritabani::open(){
+    sqlite3 *db;
+    int kontrol = sqlite3_open("Kullanim_bilgileri.db",&db);
+    if(kontrol==1){
+        cout << "Veritabanı oluşturma işlemi başarılı...";
+        return 1;
+    }
+
+    else{
+        cout << "Veritabanı oluşturma işlemi başarısız...";
+        return 0;
+    }
+
+}
+
+void veritabani::create_table() {
+    sqlite3* DB;
+    string sql = "CREATE TABLE kullanim_bilgileri("
+                      "GERİLİM           FLOAT    NOT NULL, "
+                      "AKIM          FLOAT     NOT NULL, "
+                      "BASLANGIC            TEXT     NOT NULL, "
+                      "BİTİS            TEXT     NOT NULL, "
+                      "KULLANIM_TUTAR           FLOAT    NOT NULL, "
+                      "KULLANIM_SURESİ         FLOAT);";
+    int exit = 0;
+    exit = sqlite3_open("Kullanim_bilgileri.db", &DB);
+    char* messaggeError;
+    exit = sqlite3_exec(DB, sql.c_str(), NULL, 0, &messaggeError);
+
+    if (exit != SQLITE_OK) {
+        cerr << "Tablo Oluşturma başarısız..." << endl;
+        sqlite3_free(messaggeError);
+    }
+    else
+        cout << "Tablo Oluşturma işlemi başarılı..." << endl;
+    sqlite3_close(DB);
+}
+
+
+static int callback(void* data, int argc, char** argv, char** azColName)
+{
+    int i;
+    fprintf(stderr, "%s: ", (const char*)data);
+
+    for (i = 0; i < argc; i++) {
+        printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
+    }
+
+    printf("\n");
+    return 0;
+}
+
+void veritabani::kullanim_bilgilerini_kaydetme() {
+    guc_hesabi gucBilgileri_1;
+    sqlite3* DB;
+    char* messaggeError;
+    int exit = sqlite3_open("Kullanim_bilgileri.db", &DB);
+    string query = "SELECT * FROM kullanim_bilgileri;";
+
+    sqlite3_exec(DB, query.c_str(), callback, NULL, NULL);
+
+    string sql = "INSERT INTO kullanim_bilgileri(GERİLİM,AKIM,BASLANGIC,BİTİS,KULLANIM_TUTAR,KULLANIM_SURESİ) "
+                 "VALUES ('"+to_string(gerilim)+"','"+to_string(amper_1)+"','"+baslangic_global+"','"+bitis_global+"', '"+to_string(kullanim_miktari)+"', '"+to_string(kullanim_sresi_1)+"')";
+
+    exit = sqlite3_exec(DB, sql.c_str(), callback, nullptr, &messaggeError);
+
+    if (exit != SQLITE_OK) {
+        cout << "Error Insert" << endl;
+        sqlite3_free(messaggeError);
+    }
+    else
+      cout << "Records created Successfully!" << endl;
+}
 //guc_hesabi classının yapıcı fonksiyonu oluşturuldu...
 guc_hesabi::guc_hesabi() {
     cout << "Program Hazirlaniyor Lutfen Bekleyiniz:"<<endl;
 }
+
 //guc_hesabı nın alt class ı olan sanayi yapıcı fonksiyonu oluşturuldu...
 guc_hesabi::sanayi::sanayi() {
     cout << "Kullanim parametreleri aliniyor"<<endl;
@@ -74,6 +169,9 @@ guc_hesabi::sanayi::sanayi() {
 void guc_hesabi::sanayi::sanayi_ucret_hesaplama(float kWh) {
     cout << "*********************************************************"<<endl;
     cout << "Kullanim Bedeliniz:"<<kWh*sanayi_birim_tutar<<" kurus"<<endl;
+    guc_hesabi gucHesabi_1;
+    gucHesabi_1.kullanim_tutari=kWh*sanayi_birim_tutar;
+    kullanim_miktari=gucHesabi_1.kullanim_tutari;
     //sanayi birim tutar ve kullanım miktarı (kWh) çarpılarak kullanım bedeli hesaplandı...
 }
 //ticarethane classının yapıcı fonksiyonu oluşturuldu...
@@ -84,6 +182,9 @@ guc_hesabi::ticarethane::ticarethane() {
 void guc_hesabi::ticarethane::ticarethane_ucret_hesaplama(float kWh) {
     cout << "*********************************************************"<<endl;
     cout <<"Kullanim Bedeliniz:"<<kWh*ticarethane_birim_tutar<<" kurus"<<endl;
+    guc_hesabi gucHesabi_1;
+    gucHesabi_1.kullanim_tutari=kWh*ticarethane_birim_tutar;
+    kullanim_miktari=gucHesabi_1.kullanim_tutari;
     //ticarethane birim tutar ve kullanım miktarı (kWh) çarpılarak kullanım bedeli hesaplandı...
 }
 //mesken classının yapıcı fonksiyonu oluşturuldu...
@@ -94,6 +195,9 @@ guc_hesabi::mesken::mesken() {
 void guc_hesabi::mesken::mesken_ucret_hesaplama(float kWh) {
     cout << "*********************************************************"<<endl;
     cout <<"Kullanim Bedeliniz:"<<kWh*mesken_birim_tutar<<" kurus"<<endl;
+    guc_hesabi gucHesabi_1;
+    gucHesabi_1.kullanim_tutari=kWh*mesken_birim_tutar;
+    kullanim_miktari=gucHesabi_1.kullanim_tutari;
     //mesken ve kullanım miktarı (kWh) çarpılarak kullanım bedeli hesaplandı...
 }
 
@@ -105,11 +209,13 @@ guc_hesabi::tarimsal_sulama::tarimsal_sulama() {
 void guc_hesabi::tarimsal_sulama::tarimsal_ucret_hesaplama(float kWh) {
     cout << "*********************************************************"<<endl;
     cout <<"Kullanim Bedeliniz:"<<kWh*tarimsal_sulama_birim_tutar<<" kurus"<<endl;
+    guc_hesabi gucHesabi_1;
+    gucHesabi_1.kullanim_tutari=kWh*tarimsal_sulama_birim_tutar;
+    kullanim_miktari=gucHesabi_1.kullanim_tutari;
     //tarimsal sulama birim tutar ve kullanım miktarı (kWh) çarpılarak kullanım bedeli hesaplandı...
 }
 //guc hesabı class ının yıkıcı fonksiyonu oluşturuldu
 guc_hesabi::~guc_hesabi() {
-    cout << "Program Sonlaniyor.";
 }
 
 float kullanim_sresi_hesaplama(){
@@ -130,6 +236,7 @@ float kullanim_sresi_hesaplama(){
             /*chrono classından system_clock classından now fonksiyonun return degeri bitis degerine aktarılarak
              * sistemin bitis zamanı bitis degerine atamış olduk..*/
             bitis = chrono::system_clock::now();
+
         }
     }
     /* chrono::system_clok classından to_time_t fonksiyonuna baslangic degeri gönderildi.
@@ -143,6 +250,12 @@ float kullanim_sresi_hesaplama(){
     cout << "*********************************************************"<<endl;
     cout << "Sistemin bitis zamani = " << ctime(&bitis_zamani) << endl;
     cout << "*********************************************************"<<endl;
+    guc_hesabi gucHesabi_1;
+    gucHesabi_1.baslangic_zamani = ctime(&baslangic_zamani);
+    gucHesabi_1.bitis_zamani = ctime(&bitis_zamani);
+    bitis_global=ctime(&bitis_zamani);
+    baslangic_global=ctime(&baslangic_zamani);
+
     /*ctime fonksiyona bitis zamanı ve baslangıc zamanını gönderilerek anlaşılabilir yapıda zaman degerlerinin oluşturulması saglandı
      * Ör:Fri Nov 22 10:39:26 2019*/
 
@@ -169,19 +282,26 @@ void guc_hesabi::kullanim_bilgileri() {
     //amper ve gerilim degelerini alınıp classın içindeki private kısma yazıldı..
     cout << "Sisteminizin kullandigi Amper Miktari::";
     cin >> amper;
+    amper_1=amper;
     cout << endl<<"Sisteminizin kullandigi gerilim::";
     cin >> sebeke_gerilimi;
+    gerilim=sebeke_gerilimi;
     cout << "*********************************************************"<<endl;
 }
 
 
 int main() {
     //nesleler tanımlandı
+    veritabani veritabani_1;
+    veritabani_1.open();
+    veritabani_1.create_table();
     guc_hesabi::mesken mesken_1;
     guc_hesabi::sanayi sanayi_1;
     guc_hesabi::ticarethane ticarethane_1;
     guc_hesabi::tarimsal_sulama tarim_1;
     guc_hesabi guc_bilgileri;
+
+
     while (true) {
         //windows cmd komutu olarak color 02 verilir ve yazı rengi degistirilir...
         system("COLOR 02");
@@ -198,6 +318,7 @@ int main() {
         guc_bilgileri.kullanim_bilgileri();//kullanım bilgileri fonksiyonu kullanılarak amper ve gerilim degerleri alınır.
 
         guc_bilgileri.kullanim_sresi = kullanim_sresi_hesaplama();
+        kullanim_sresi_1=guc_bilgileri.kullanim_sresi;
         /*kullanim süresi fonksiyonu kullanılarak sistemin açık kalma süresi hesaplanılır ve classın içindeki kullanım süresi
          * degiskenine yazılır*/
         cout <<"Kullanim Suresi::"<< guc_bilgileri.kullanim_sresi <<" saniye"<< endl;
@@ -222,6 +343,7 @@ int main() {
             tarim_1.tarimsal_ucret_hesaplama(guc_bilgileri.toplam_harcanan_guc);
 
         }
+        veritabani_1.kullanim_bilgilerini_kaydetme();
         system("PAUSE");//windows komutları tanımlanır...
         system("cls");
 
