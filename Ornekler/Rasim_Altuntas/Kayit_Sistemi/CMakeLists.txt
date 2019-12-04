@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 cmake_minimum_required(VERSION 3.14)
 project(untitled13)
 
 set(CMAKE_CXX_STANDARD 17)
 
+=======
+cmake_minimum_required(VERSION 3.14)
+project(untitled13)
+
+set(CMAKE_CXX_STANDARD 17)
+
+>>>>>>> upstream/master
 add_executable(untitled13 main.cpp)
