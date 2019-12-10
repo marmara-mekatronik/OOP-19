@@ -2,9 +2,14 @@
 
 using namespace std;
 
-class Kare;
 
-class dikdortgen;
+class Kare {
+    friend class dikdortgen;
+public:
+    Kare(int a);
+private:
+    int kenar;
+};
 
 class dikdortgen {
     int genislik, yukseklik;
@@ -14,13 +19,7 @@ public:
     void cevir(Kare &a);
 };
 
-class Kare {
-    friend class dikdortgen;
-public:
-    Kare(int a);
-private:
-    int kenar;
-};
+
 
 void dikdortgen::cevir(Kare &a) {
     genislik=a.kenar;

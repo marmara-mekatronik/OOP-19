@@ -20,7 +20,7 @@ int main() {
     Kutu1.derinlik = 0.5;
     Kutu1.genislik = 1;
     Kutu1.yukseklik = 1.5;
-    hacim=Kutu1.HacimHesapla();
+    Kutu1.HacimHesapla();
 
     Kutu Kutu2;
     Kutu2.derinlik = 2.5;
@@ -30,6 +30,6 @@ int main() {
 
     cout << "1. Kutunuzun D:" << Kutu1.derinlik << " G:"
     << Kutu1.genislik << " Y:" << Kutu1.yukseklik << endl;
-    cout << "Hacim :" << hacim << endl;
+    cout << "Hacim :" <<Kutu1.HacimHesapla() << endl;
     return 0;
 }

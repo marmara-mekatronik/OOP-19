@@ -1,0 +1,3 @@
+C:/Users/Casper/Desktop/OOP-19/Ornekler/Huseyin_YUCE/2_Pointer/cmake-build-debug/CMakeFiles/CPP4.dir
+C:/Users/Casper/Desktop/OOP-19/Ornekler/Huseyin_YUCE/2_Pointer/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Casper/Desktop/OOP-19/Ornekler/Huseyin_YUCE/2_Pointer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
