@@ -2,8 +2,8 @@
 using namespace std;
 class Hayvan{
 public:
-    //virtual string konusma(){
-    string konusma(){
+    virtual string konusma(){
+    //string konusma(){
         return "Konusamiyor!";
     }
 };

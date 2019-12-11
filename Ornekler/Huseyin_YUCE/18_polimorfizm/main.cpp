@@ -5,10 +5,10 @@ protected:
     int genislik, yukseklik;
 public:
     Sekil(int a=0, int b=0);
-    // virtual int alan();
-    int alan();
+    virtual int alan();
+    // int alan();
 };
-Sekil::Sekil(int a, int b) {
+Sekil::Sekil(int a, int b){
     genislik = a;
     yukseklik = b;
 }
