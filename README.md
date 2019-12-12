@@ -46,3 +46,4 @@ Hüseyin Özen
 
 Destek: Cem GÜÇLÜ
 
+AbdulKadir Doğan
