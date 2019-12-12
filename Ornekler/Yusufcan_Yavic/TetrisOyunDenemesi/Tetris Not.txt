@@ -4,3 +4,4 @@
 vektor random conio iomanip gibi kütüphanelerde kullanılmıştır.
 #Oyun clion programının kendi konsolunda tam manası ile çalışmadığı için derlenen exe dosyası ile oynanmalıdır.
 #Oyunda satır silme çalışmamaktadır sorun giderilsin diye uğraşmaktayım.
+#Oyun ilerde kütüphane mantığı ile yazılırsa sorun gidermesi kolay olabilir ve işlevselliği artabilir.
