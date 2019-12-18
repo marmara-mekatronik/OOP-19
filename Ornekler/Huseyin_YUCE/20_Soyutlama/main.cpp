@@ -18,7 +18,7 @@ public:
     void senNesin(){cout<<"Ben Bir Dikdorgenim" << endl;}
     void alanHesapla(){ alan=yukseklik*genislik; }
     void cevreHesapla (){ cevre = 2*(yukseklik + genislik); }
-
+    ~Dikdortgen();
 };
 class Daire:public Sekil{
 double r;
