@@ -6,8 +6,9 @@ protected:
 public:
     Sekil(int a=0, int b=0);
     virtual int alan();
+    // int alan();
 };
-Sekil::Sekil(int a, int b) {
+Sekil::Sekil(int a, int b){
     genislik = a;
     yukseklik = b;
 }
@@ -33,16 +34,16 @@ public:
 };
 
 int main() {
-    Sekil *sekil;
+    Sekil *sekil1, *sekil2;
 
-    Diktorgen dik(10,7);
-    Ucgen Ucg(10,5);
+    Diktorgen dik(10,20);
+    Ucgen Ucg(11,11);
 
-    sekil = &dik;
-    cout << sekil->alan() << endl;
+    sekil1 = &dik;
+    cout << sekil1->alan() << endl;
 
-    sekil=&Ucg;
-    cout << sekil->alan() << endl;
+    sekil2=&Ucg;
+    cout << sekil2->alan() << endl;
 
     return 0;
 }

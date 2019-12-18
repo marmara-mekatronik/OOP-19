@@ -3,18 +3,19 @@ using namespace std;
 class Hayvan{
 public:
     virtual string konusma(){
+    //string konusma(){
         return "Konusamiyor!";
     }
 };
 class Kedi: public Hayvan {
 public:
-    string konusma() override {
+    string konusma()  {
         return "Miyav Miyav!";
     }
 };
 class Kopek:public Hayvan{
 public:
-    string konusma() override{
+    string konusma() {
         return "Hav Hav!";
     }
 };
@@ -25,7 +26,7 @@ int main() {
     cout << "Hayvan: " << hayvan.konusma() << endl;
     cout << "Hayvan: " << kedi.konusma() << endl;
     cout << "Hayvan: " << kopek.konusma() << endl;
-
+    cout << "----------------------------" << endl;
     Hayvan *ptrHayvan;
     ptrHayvan =  &hayvan;
     cout << "Hayvan: " << ptrHayvan->konusma() << endl;
