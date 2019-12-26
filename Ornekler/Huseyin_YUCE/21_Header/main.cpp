@@ -3,6 +3,6 @@
 
 int main() {
 
-    std::cout << faktoriyel(8) << std::endl;
+    std::cout << faktoriyel(5) << std::endl;
     return 0;
 }
