@@ -11,7 +11,7 @@ long fibonacci(unsigned n)
 inline long fibonacci_inline(unsigned n)
 {
     if (n < 2) return n;
-    return fibonacci(n-1) + fibonacci(n-2);
+    return fibonacci_inline(n-1) + fibonacci_inline(n-2);
 }
 
 int main() {
